@@ -1,0 +1,59 @@
+
+.client{
+    @extend %section;   
+}
+
+
+.clients{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+
+   &__item{
+       @extend %list;
+    list-style: none;
+    @media screen and (max-width: 767px) {
+        width: calc((100%-2*30px)/2);
+        font-size: 28px;
+        line-height: 1.18 ;
+        
+      }
+
+    @media screen and (min-width:768px){
+        width: calc((100%-3*30px)/3);
+      }
+    @media screen and (min-width:1200px) {
+        width: calc((100%-6*30px)/6);
+        
+      }
+    }
+    // width: calc((100%/2 * 30px)/2);
+
+    // &__item:not(:last-child){
+    //     @extend %list;
+    //      margin-right: 30px;     
+    // }
+
+    &__link{
+         @include centeredFlex() ;
+        
+        //  width: 170px;
+         height: 92px;
+         margin: 15px;
+         fill: $background-icon;
+
+         border: 1px solid $background-icon;
+         border-radius: 4px;
+         cursor: pointer;
+
+         transition: border 250ms $cubic, 
+                     fill 250ms $cubic;
+    }
+
+     &__link:hover,
+     &__link:focus{
+         fill: $accent-color;
+         border-color: $accent-color;
+         outline: none;
+    }
+}

@@ -1,0 +1,10 @@
+@mixin centeredFlex() {
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+@mixin fontSize($size, $line){
+    font-size: $size;
+    line-height: $line;
+  }

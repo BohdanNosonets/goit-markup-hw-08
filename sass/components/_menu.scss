@@ -1,0 +1,87 @@
+.menu-button {
+    display: inline-flex;
+    position: static;
+    margin: 0 0 0 auto;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    z-index: 3;
+  
+    &:hover {
+      fill: $accent-color;
+    }
+    
+    &:focus {
+      fill: $accent-color;
+    }
+  
+    &.menu-button .icon-cross {
+      display: none;
+    }
+  
+    &.menu-button.is-open .icon-cross {
+      display: block;
+      position: fixed;
+      margin-left: 80%;
+    }
+  
+    &.menu-button.is-open .icon-menu {
+      display: none;
+    }
+  
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+  
+  
+  
+  .menu-container {
+    // position: fixed;
+    z-index: 2;
+  
+    background-color: $primary-white-color;
+  
+    padding: 48px 40px;
+  
+    @media screen and (max-width: 767px) {
+      display: none;
+      // position: fixed;
+      position: absolute;
+      height: 796px;
+      top: 0;
+      left: 0;
+      width: 100%;
+  
+      &.is-open {
+        display: block;
+          position: fixed;
+          overflow-y: scroll;
+          height: 100vh;
+      }
+    }
+    @media screen and (min-width:768px){
+      display: flex;
+      padding: 0;
+    }
+    @media screen and (min-width:1200px) {
+      width: 100%;
+    }
+  }
+  
+  .menu-container__wrap {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+  
+    @media screen and (min-width:768px) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+    }
+    @media screen and (min-width:1200px) {
+      width: 100%;
+    }
+}

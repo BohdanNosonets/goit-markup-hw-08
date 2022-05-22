@@ -1,0 +1,129 @@
+/* Проекти */
+.project__wrap{
+        margin:15px;
+    
+}
+.project{
+    // @extend %section;
+    // padding-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin: -15px;
+
+    &__item{
+        // @extend %list;
+        display: flex;
+
+     &:nth-last-child(-n+1) {
+     margin-bottom: 0;
+    }
+
+    &:hover .product__overlay {
+        transform: translateY(0);
+      }
+      @media screen and (min-width: 768px) {
+        width: calc((100%-2*30px)/2);
+      }
+    
+      @media screen and (min-width:1200px) {
+        width: calc((100%-3*30px)/3);
+      }
+
+  
+        // width: calc((100% - 60px)/3);
+        // margin-right: 30px;
+        // margin-bottom: 30px;
+    }
+   
+
+    // &__item:nth-child(3n){
+    //     margin-right: 0;
+    // }
+    // &__item:nth-last-child(-n+3){
+    //     margin-bottom: 0;
+    // }
+
+    &__link{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        color: $title-text-color;
+        // display: block;
+        transition: box-shadow 250ms $cubic;
+        text-decoration: none; 
+    }
+    
+    &__link:hover,
+    &__link:focus{
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    /* Overlay start*/
+
+    &__box{ 
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__text{
+        position: absolute;
+        top: 50%;
+        left:50%;
+        transform: translate(-50%,50%);
+        width: 100%;
+        height: 100%;
+        text-align: left;    
+        // padding:63px 24px;
+    
+        background-color: rgba(33, 150, 243, 0.9);
+
+        color: $primary-white-color;
+               
+        font-size: 18px;
+        line-height: 1.56;
+        opacity: 0;
+
+        transition: transform 250ms $cubic  ;
+    }
+
+    &__link:hover &__text,
+    &__link:focus &__text{
+    transform: translate(-50%,-50%);
+    opacity: 1;
+    }
+/* Overlay end */
+}
+
+.project-group {
+    border-top: transparent;
+  padding: 20px 24px;
+    flex-grow: 1;
+
+    border-bottom: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+
+    // padding: 20px 24px; 
+
+    background-color: $primary-white-color;
+    
+    &__title{
+        margin-bottom: 4px;
+        color: $title-text-color;
+    
+        font-weight: 700;  
+        @include fontSize(18px, 2);
+        letter-spacing: 0.06em; 
+        margin-bottom: 4px;
+    }
+    
+    &__text{
+        color: $primary-text-color;
+        @include fontSize(16px, 1.71);
+        // font-size: 16px;
+        // line-height: 1.71;   
+    }  
+}
+
+

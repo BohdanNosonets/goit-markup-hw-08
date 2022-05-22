@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+          rel="stylesheet" />
+     <link rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <!-- <link rel="stylesheet" href="css/styles.css"/> -->
+    <link rel="stylesheet" href="css/portfolio.min.css"/>
+    <title>Портфолио</title>
+    </head>
+<body>
+  <header class="header"> 
+    <div class="container ">
+           <!--Навигация-->
+           
+       <nav class="navigation" >
+           <a href="./index.html" class="logo">Web
+             <span class="logo__black">Studio</span>
+           </a>
+
+           <button 
+           type="button" 
+           class="menu-button" 
+           aria-expanded="false"
+           aria-controls="menu-container"
+           data-menu-button>
+           
+           <svg width="40" 
+                height="40"
+           aria-label="Переключатель мобильного меню"
+           >
+             <use class="icon-cross" href="./images/icons.svg#icon-cross"></use>
+             <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+           </svg>
+          </button>
+            <div class="menu-container" id="menu-container" data-menu>
+
+              <div class="menu-container__wrap">
+
+              <div class="nav__list">
+                <ul class="nav">
+                  <li class="nav__item"><a href="./index.html" class="nav__link">Студия</a></li>
+                  <li class="nav__item"><a href="./portfolio.html" class="nav__link current">Портфолио</a></li>
+                  <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
+                </ul>
+              </div>
+
+               <div class="contacts">
+                <ul class="contact ">
+                  <li class="contact__item">
+                    <a class="contact__link" href="mailto:info@devstudio.com">
+                      <svg class="contact__mail" width="16" height="12">
+                        <use href="./images/icons.svg#envelope"></use>
+                      </svg>
+                      info@devstudio.com
+                    </a>
+                  </li>
+                  <li class="contact__item">
+                    <a class="contact__link" href="tel:+380961111111">
+                      <svg class="contact__phone" width="10" height="16">
+                        <use href="./images/icons.svg#phone"></use>
+                      </svg>
+                      +38 096 111 11 11
+                    </a>
+                  </li>
+                </ul>
+               </div>
+                  <div class="soc-nav">
+                    <ul class="soc-navigation">
+                      <li class="soc-navigation__item"><a href="" class="soc-navigation__link">Instagram</a></li>
+                      <li class="soc-navigation__item"><a href="" class="soc-navigation__link">Twitter</a></li>
+                      <li class="soc-navigation__item"><a href="" class="soc-navigation__link">Facebook</a></li>
+                      <li class="soc-navigation__item"><a href="" class="soc-navigation__link">LinkedIn</a></li>
+                    </ul>
+                  </div>
+              </div>
+            </div>
+        </nav>
+        </div>
+  </header>
+    <main>
+        <!--Наши роботы-->
+            <section class="button-section">
+                <div class="container ">
+            <h1 class="visually-hidden">Портфолио</h1>
+        <!--Фильтр-->
+        <ul class="buttons">
+            <li class="buttons__list">
+                <button type="button"  class=" buttons__item"  >Все</button>
+            </li>
+            <li class="buttons__list">
+                <button type="button"  class=" buttons__item" >Веб-сайты</button>
+            
+            </li>
+            <li class="buttons__list">
+                <button type="button"  class=" buttons__item"  >Приложения</button>
+            </li>
+            <li class="buttons__list">
+                <button type="button"  class=" buttons__item"  >Дизайн</button>
+            </li>
+            <li class="buttons__list">
+                <button type="button"  class=" buttons__item" >Маркетинг</button>
+            </li> 
+        </ul>
+        <ul class=" project">
+            <li class="project__item">
+              <div class="project__wrap">
+                <a class="project__link" href="#" >
+                  <div class="project__box">
+                   <picture>
+                    <source srcset="./images/desctop/project1-1200.jpg 1x, ./images/desctop/project1-1200@2x.jpg 2x" 
+                    media="(min-wigth:1200px")
+                    type="image/jpeg">
+                    <source srcset="./images/tablet/project1-768.jpg 1x, ./images/tablet/project1-768@2x.jpg 2x" 
+                    media="(min-wigth:768px")
+                    type="image/jpeg">
+                    <source srcset="./images/mobile/project1-480.jpg 1x, ./images/mobile/project1-480@2x.jpg 2x" 
+                    media="(max-wigth:767px")
+                    type="image/jpeg">
+                    <img  src="./images/mobile/project1-480.jpg" alt="Постер New Orlean vs Golden Star"
+                    width="370"/>
+                  </picture>
+                    
+                         <p class="project__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+                            Все это позволит посетителю получить исчерпывающие сведения? 
+                            о компании или частном лице.
+                          </p>
+                  </div>
+                    <div class="project-group">
+                       <h2 class="project-group__title">Технокряк</h2>
+                          <p class="project-group__text">Веб-сайт</p>
+                   </div>     
+                  </a>
+              </div>
+              
+            </li>
+            <li class="project__item">
+              <div class="project__wrap">
+                <a href="#" class="project__link">
+                  <div class="project__box">
+                    <picture>
+                      <source srcset="./images/desctop/project2-1200.jpg 1x, ./images/desctop/project2-1200@2x.jpg 2x" 
+                      media="(min-wigth:1200px")
+                      type="image/jpeg">
+                      <source srcset="./images/tablet/project2-768.jpg 1x, ./images/tablet/project2-768@2x.jpg 2x" 
+                      media="(min-wigth:768px")
+                      type="image/jpeg">
+                      <source srcset="./images/mobile/project2-480.jpg 1x, ./images/mobile/project2-480@2x.jpg 2x" 
+                      media="(max-wigth:767px")
+                      type="image/jpeg">
+                      <img  src="./images/mobile/project2-480.jpg" alt="Постер New Orlean vs Golden Star"
+                      width="370"/>
+                    </picture>
+                 <p class="project__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+                      Все это позволит посетителю получить исчерпывающие сведения? 
+                      о компании или частном лице.
+                    </p>
+                    </div>
+                  <div class="project-group">
+                     <h2 class="project-group__title">Постер New Orlean vs Golden Star</h2>
+                        <p class="project-group__text">Дизайн</p>
+                  </div>
+                </a>
+              </div>
+               
+            </li>
+            <li class="project__item">
+              <div class="project__wrap">
+                <a href="#" class="project__link">
+                  <div class="project__box">
+                    <picture>
+                      <source srcset="./images/desctop/project3-1200.jpg 1x, ./images/desctop/project3-1200@2x.jpg 2x" 
+                      media="(min-wigth:1200px")
+                      type="image/jpeg">
+                      <source srcset="./images/tablet/project3-768.jpg 1x, ./images/tablet/project3-768@2x.jpg 2x" 
+                      media="(min-wigth:768px")
+                      type="image/jpeg">
+                      <source srcset="./images/mobile/project3-480.jpg 1x, ./images/mobile/project3-480@2x.jpg 2x" 
+                      media="(max-wigth:767px")
+                      type="image/jpeg">
+                      <img  src="./images/mobile/project3-480.jpg" alt="Постер New Orlean vs Golden Star"
+                      width="370"/>
+                    </picture>
+                     <p class="project__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+                      Все это позволит посетителю получить исчерпывающие сведения? 
+                      о компании или частном лице.
+                    </p>
+                    </div>
+                  <div class="project-group">
+                     <h2 class="project-group__title">Ресторан Seafood</h2>
+                        <p class="project-group__text">Приложение</p>
+                  </div>
+                </a>
+              </div>
+              
+            </li>
+            <li class="project__item">
+              <div class="project__wrap">
+                <a href="#" class="project__link">
+                  <div class="project__box">
+                    <picture>
+                      <source srcset="./images/desctop/project4-1200.jpg 1x, ./images/desctop/project4-1200@2x.jpg 2x" 
+                      media="(min-wigth:1200px")
+                      type="image/jpeg">
+                      <source srcset="./images/tablet/project4-768.jpg 1x, ./images/tablet/project4-768@2x.jpg 2x" 
+                      media="(min-wigth:768px")
+                      type="image/jpeg">
+                      <source srcset="./images/mobile/project4-480.jpg 1x, ./images/mobile/project4-480@2x.jpg 2x" 
+                      media="(max-wigth:767px")
+                      type="image/jpeg">
+                      <img  src="./images/mobile/project4-480.jpg" alt="Постер New Orlean vs Golden Star"
+                      width="370"/>
+                    </picture>
+                     <p class="project__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+                      Все это позволит посетителю получить исчерпывающие сведения? 
+                      о компании или частном лице.
+                    </p>
+                    </div>
+                  <div class="project-group">
+                     <h2 class="project-group__title">Проект Prime</h2>
+                        <p class="project-group__text">Маркетинг</p>
+                  </div>
+                </a>
+              </div>
+                
+            </li>
+            <li class="project__item">
+              <div class="project__wrap">
+                <a href="#" class="project__link">
+                  <div class="project__box">
+                    <picture>
+                      <source srcset="./images/desctop/project5-1200.jpg 1x, ./images/desctop/project5-1200@2x.jpg 2x" 
+                      media="(min-wigth:1200px")
+                      type="image/jpeg">
+                      <source srcset="./images/tablet/project5-768.jpg 1x, ./images/tablet/project5-768@2x.jpg 2x" 
+                      media="(min-wigth:768px")
+                      type="image/jpeg">
+                      <source srcset="./images/mobile/project5-480.jpg 1x, ./images/mobile/project5-480@2x.jpg 2x" 
+                      media="(max-wigth:767px")
+                      type="image/jpeg">
+                      <img src="./images/mobile/project5-480.jpg" alt="Постер New Orlean vs Golden Star"
+                      width="370"/>
+                    </picture>
+                     <p class="project__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+                      Все это позволит посетителю получить исчерпывающие сведения? 
+                      о компании или частном лице.
+                    </p>
+                    </div>
+                    <div class="project-group">
+                      <h2 class="project-group__title">Проект Boxes</h2>
+                        <p class="project-group__text">Приложение</p>
+                   </div>
+                </a>
+              </div>
+                
+            </li>
+            <li class="project__item">
+              <div class="project__wrap">
+                <a href="#" class="project__link">
+                  <div class="project__box">
+                    <picture>
+                      <source srcset="./images/desctop/project6-1200.jpg 1x, ./images/desctop/project6-1200@2x.jpg 2x" 
+                      media="(min-wigth:1200px")
+                      type="image/jpeg">
+                      <source srcset="./images/tablet/project6-768.jpg 1x, ./images/tablet/project6-768@2x.jpg 2x" 
+                      media="(min-wigth:768px")
+                      type="image/jpeg">
+                      <source srcset="./images/mobile/project6-480.jpg 1x, ./images/mobile/project6-480@2x.jpg 2x" 
+                      media="(max-wigth:767px")
+                      type="image/jpeg">
+                      <img  src="./images/mobile/project6-480.jpg" alt="Постер New Orlean vs Golden Star"
+                      width="370"/>
+                    </picture>
+                     <p class="project__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+                      Все это позволит посетителю получить исчерпывающие сведения? 
+                      о компании или частном лице.
+                    </p>
+                    </div>
+                  <div class="project-group">
+                     <h2 class="project-group__title">Inspiration has no Borders</h2>
+                        <p class="project-group__text">Веб-сайт</p>
+                  </div>
+                </a>
+              </div>
+               
+            </li>
+            <li class="project__item">
+              <div class="project__wrap">
+                <a href="#" class="project__link">
+                  <div class="project__box">
+                   <picture>
+                     <source srcset="./images/desctop/project7-1200.jpg 1x, ./images/desctop/project7-1200@2x.jpg 2x" 
+                     media="(min-wigth:1200px")
+                     type="image/jpeg">
+                     <source srcset="./images/tablet/project7-768.jpg 1x, ./images/tablet/project7-768@2x.jpg 2x" 
+                     media="(min-wigth:768px")
+                     type="image/jpeg">
+                     <source srcset="./images/mobile/project7-480.jpg 1x, ./images/mobile/project7-480@2x.jpg 2x" 
+                     media="(max-wigth:767px")
+                     type="image/jpeg">
+                     <img  src="./images/mobile/project7-480.jpg" alt="Постер New Orlean vs Golden Star"
+                     width="370"/>
+                   </picture>
+                    <p class="project__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+                     Все это позволит посетителю получить исчерпывающие сведения? 
+                     о компании или частном лице.
+                   </p>
+                   </div>
+                 <div class="project-group">
+                    <h2 class="project-group__title">Издание Limited Edition</h2>
+                       <p class="project-group__text">Дизайн</p>
+                 </div>
+                   </a>
+              </div>
+                
+            </li>
+            <li class="project__item">
+              <div class="project__wrap">
+                <a href="#" class="project__link">
+                  <div class="project__box">
+                    <picture>
+                      <source srcset="./images/desctop/project8-1200.jpg 1x, ./images/desctop/project8-1200@2x.jpg 2x" 
+                      media="(min-wigth:1200px")
+                      type="image/jpeg">
+                      <source srcset="./images/tablet/project8-768.jpg 1x, ./images/tablet/project8-768@2x.jpg 2x" 
+                      media="(min-wigth:768px")
+                      type="image/jpeg">
+                      <source srcset="./images/mobile/project8-480.jpg 1x, ./images/mobile/project8-480@2x.jpg 2x" 
+                      media="(max-wigth:767px")
+                      type="image/jpeg">
+                      <img src="./images/mobile/project8-480.jpg" alt="Постер New Orlean vs Golden Star"
+                      width="370"/>
+                    </picture>
+                     <p class="project__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+                      Все это позволит посетителю получить исчерпывающие сведения? 
+                      о компании или частном лице.
+                    </p>
+                     </div>
+                  <div class="project-group">
+                     <h2 class="project-group__title">Проект LAB</h2>
+                        <p class="project-group__text">Маркетинг</p>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li class="project__item">
+              <div class="project__wrap">
+                <a href="#" class="project__link">
+                  <div class="project__box">
+                    <picture>
+                      <source srcset="./images/desctop/project9-1200.jpg 1x, ./images/desctop/project9-1200@2x.jpg 2x" 
+                      media="(min-wigth:1200px")
+                      type="image/jpeg">
+                      <source srcset="./images/tablet/project9-788.jpg 1x, ./images/tablet/project9-768@2x.jpg 2x" 
+                      media="(min-wigth:768px")
+                      type="image/jpeg">
+                      <source srcset="./images/mobile/project9-480.jpg 1x, ./images/mobile/project9-480@2x.jpg 2x" 
+                      media="(max-wigth:767px")
+                      type="image/jpeg">
+                      <img src="./images/mobile/project9-480.jpg" alt="Постер New Orlean vs Golden Star"
+                      width="370"/>
+                    </picture>
+                     <p class="project__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+                      Все это позволит посетителю получить исчерпывающие сведения? 
+                      о компании или частном лице.
+                    </p>
+                    </div>
+                  <div class="project-group">
+                     <h2 class="project-group__title">Growing Business</h2>
+                        <p class="project-group__text">Приложение</p>
+                  </div>
+                    </a>
+              </div>
+            </li>
+        </ul>
+      </div>
+    </section>
+    </main>
+           <!--Подвал-->
+           <footer class="footer">
+            <div class="container wrap footer-flex">
+              <div class="footer-wrap">
+                <div class="adress-wrap">
+                  <!-- Футер-лого-->
+                  <a href="./index.html" class="logo ">Web<span class="logo__white">Studio</span></a>
+                  <!--Address-->
+            <address > 
+              <ul class="address ">
+                <li class="address__item"> 
+                  <a  class="address__link-white "  href="https://bit.ly/3pXMvUd" target="_blank" rel="noopener noreferrer">
+                  г. Киев, пр-т Леси Украинки, 26</a></li>
+                <li class="address__item">
+                  <a class="address__link " href="mailto:info@devstudio.com">info@example.com</a></li>
+                <li >
+                  <a class="address__link " href="tel:+380991111111">+38 099 111 11 11</a></li>
+              </ul>
+            </address>
+          </div>
+          <!--  -->
+            <div  class="socials">
+              <p class="subtitle">ПРИСОЕДИНЯЙТЕСЯ</p>
+              <ul class="socials__media ">
+                <li class="socials__item">
+                    <a class="socials__link" href=""  >
+                      <svg class="socials__icon" width="20" height="20">
+                            <use href="./images/icons.svg#instagram"></use>
+                      </svg>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                      <a class="socials__link" href="">
+                        <svg class="socials__icon" width="20" height="20">
+                          <use href="./images/icons.svg#twitter"></use>
+                        </svg>
+                      </a>
+                  </li>
+                  <li class="socials__item">
+                    <a class="socials__link" href="">
+                      <svg class="socials__icon" width="20" height="20">
+                        <use href="./images/icons.svg#facebook"></use>
+                      </svg>
+                    </a>
+                 </li>
+                 <li class="socials__item">
+                   <a class="socials__link" href="">
+                    <svg class="socials__icon" width="20" height="20">
+                      <use href="./images/icons.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                 </li>
+               </ul>
+              </div>
+             
+                </div>
+                <!--ПОДПИШИТЕСЬ НА РАССЫЛКУ -->
+                <div class="subscription">
+                   <p class="subtitle">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
+                   <form class="subscription__form" name="email input" action="#">
+                     <label class="subscription__lable visually-hidden" for="user-email">введите-email*</label>
+                     <input class="subscription__input" id="user-email" type="email" name="email"  placeholder="E-mail"/>
+                     <button class="subscription__button" type="submit">Подписаться
+                       <svg class="subscription__icon" width="24" height="24">
+                         <use href="./images/icons.svg#icon-telegram"></use>
+                       </svg>
+                     </button>
+                   </form>
+                 </div>
+              </div>
+            </div>
+           </footer>
+      <script src="./js/mobile-menu.js"></script>
+</body>
+</html>
