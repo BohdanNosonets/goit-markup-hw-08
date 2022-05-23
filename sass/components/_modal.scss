@@ -1,14 +1,14 @@
 .backdrop{
     position: fixed;
-    background-color: rgba(0, 0, 0, 0.2);
     z-index: 4;
+    background-color: rgba(0, 0, 0, 0.2);
     top:0;
     left: 0;
     width: 100%;
     height: 100%;
 
     overflow-y: scroll;
-
+ 
     opacity: 1;
 
     transition: opacity 250ms $cubic;
@@ -27,8 +27,8 @@
      
     transform: translate(-50%,-50%) scale(1);
 
-    width: 609px;
-    height: 450px;
+    width: 450px;
+    height: 609px;
     
     background: $primary-white-color;
     box-shadow:
@@ -36,17 +36,19 @@
     0px 1px 1px rgba(0, 0, 0, 0.14), 
     0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    padding: 40px ;
+    padding: 40px 40px;
 
     transition: opacity 250ms $cubic;
 
-    @media screen and (min-width: 479px) {
-        width: 450px;
-    }
-      @media screen and (min-width: 1199px){
+    @media screen and (max-width: 479px) {
+        width: 90%;
+      }
+    
+      @media screen and (min-width: 1200px){
         height: 581px;
         width: 528px;
       }
+    
 
     &__icon{
         position:absolute;
@@ -64,15 +66,9 @@
     }
     
     &__button{
-        @include centeredFlex();
-
         position:absolute;
-        top: 0;
-        right: 0;
-         background-repeat: no-repeat;
-        background-position: center;
-        margin-top: 8px;
-        margin-right: 8px;
+        right: 8px;
+        top: 8px;
         background: $primary-white-color;
         border: 1px solid rgba(0, 0, 0, 0.1);
         border-radius: 50%;
@@ -91,3 +87,4 @@
         
     }
 }
+
